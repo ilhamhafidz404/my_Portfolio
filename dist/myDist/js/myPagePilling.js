@@ -29,7 +29,7 @@ $(document).ready(function() {
 		onLeave: function(index, nextIndex, direction){},
 		afterLoad: function(anchorLink, index){},
         afterRender: function(){},
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-        menu: '#myMenu'
+        // anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        // menu: '#myMenu'
 	});
 });
