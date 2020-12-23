@@ -1,0 +1,586 @@
+.section
+    overflow: hidden
+.skat
+    z-index: -2
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    transform: rotate(-45deg);
+    background-color: #3183fd;
+    &:nth-child(1)
+        left: -500px;
+    &:nth-child(2)
+        left: -300px;
+.skatSkill
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    transform: rotate(20deg);
+    &:nth-child(1)
+        right: -400px;
+    &:nth-child(2)
+        right: -280px;
+        height: 300px;
+        top: -270px;
+.skat-gallery
+    width: 100%;
+    transform: rotate(90deg);
+    background-color: #3183fd;
+    z-index: -100000;
+    bottom: 0;
+    &:nth-child(1)
+        left: -550px;
+    &:nth-child(2)
+        left: -400px;
+.skat-contact
+    transform: rotate(45deg);
+    height: 300px
+    width: 300%
+    right: 100px
+    &:nth-child(1)
+        left: -900px
+    &:nth-child(2)
+        height: 70px
+        left: -1350px
+    
+#pp-nav
+    ul
+        li
+            a
+                span
+                    width: 10px;
+                    height: 10px;
+
+
+.mc-item 
+    .mc-item__caption
+        background-color: #fff !important;
+        p
+            color: #333;
+            font-family: "Poppins", sans-serif;
+            span
+                font-weight: bold;
+
+
+// -------------------------------------Home------------------------------------------------
+.home
+    box-shadow: 0 0 15px rgba(0,0 ,0 ,0.5 );
+    .left
+        // background-color: #4d74d1;
+        position: relative;
+        .text
+            position: relative;
+            margin-left: 50px;
+            z-index: 1000000;
+            h1, h2, h3, h4, h5
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            word-wrap: none;
+            h4
+                font-weight: 500;
+                white-space: nowrap;
+                margin-top: 30px;
+                &.hello
+                    margin-bottom: -7px;
+                span
+                    font-weight: 300;
+            h1
+                font-weight: 700;
+                letter-spacing: 3px;
+                z-index: 10000;
+                white-space: nowrap;
+                span
+                    font-weight: 500;
+            h5
+                font-weight: 400;
+                right: -100px;
+                margin-bottom: 40px;
+                span
+                    font-weight: 500;
+            a.btn
+                border: 1px solid #fff;
+                color: white;
+                transition: 0.5s;
+                &:hover
+                    color: #0d6efd;
+                    background-color: white;
+        .sosmed
+            margin-top: 200px;
+            text-align: center
+            .fab
+                color: white;
+                margin: 0 5px;
+                border: 1px solid #fff
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                text-align: center;
+                line-height: 30px;
+                cursor: pointer;
+                &.fa-facebook-f:hover
+                    background-color: #4064ac;
+                &.fa-instagram:hover
+                    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                &.fa-twitter:hover
+                    background-color: #1d9ceb;
+                &.fa-youtube:hover
+                    background-color: #f60000;
+
+    .right
+        background-image: url(../../../img/photo.jpg);
+        background-size: cover;
+        background-position-y: -350px;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 0;
+        border-left: 5px solid #0d6efd;
+        .text
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            padding: 20px;
+            &::before
+                content: "";
+                display: block;
+                width: 20px;
+                height: 100%;
+                background-color: white;
+                position: absolute;
+                left: -20px;
+                top: 0;
+            // &::after
+            //     content: "";
+            //     display: block;
+            //     width: 100px;
+            //     height: 100%;
+            //     background-color: white;
+            //     position: absolute;
+            //     left: -78px;
+            //     top: -47px;
+            //     transform: rotate(50deg);
+
+
+
+@media only screen and (max-width: 990px)
+    .home
+        .left
+            .text
+                margin-left: 0;
+            .sosmed
+                margin-top: 100px;
+                .fab
+                    margin: 0;
+        .right
+            background-position-y: -230px;
+
+
+@media only screen and (max-width: 767px)
+    .home
+        .left
+            background-image: url(../../../img/photo.jpg);
+            background-size: cover;
+            background-position-y: -310px;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 0;
+        .right
+            .text::before
+                background-color: #0d6efd;
+
+
+// -----------------------------------Skil----------------------------------
+.skill
+    height: 500px;
+    .left
+        height: 500px;
+        position: relative;
+        .top
+            width: 250px;
+            padding: 50px 0;
+            position: absolute;
+            left: -50px;
+            top: 20px;
+            h5
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 30px;
+                letter-spacing: 2px;
+                margin-bottom: 0;
+                span
+                    font-weight: 300;
+            img
+                width: 120px;
+                border: 6px solid rgba(180, 179, 179, 0.5);
+        .bottom
+            position: absolute;
+            bottom: 20px;
+            padding: 20px;
+            padding-top: 100px;
+    .right
+        position: relative;
+        .header
+            position: absolute;
+            left: -150px;
+            top: 50px;
+            h2
+                font-family: 'Poppins', sans-serif;
+                font-size: 80px;
+                font-weight: 700;
+                position: relative;
+                z-index: 1;
+                span
+                    position: absolute;
+                    font-size: 100px;
+                    z-index: 0;
+                    white-space: nowrap;
+                    left: 100px;
+                    top: 15px;
+                    z-index: -1;
+        .body
+            position: absolute;
+            bottom: 150px;
+            right: 0;
+            left: 0;
+            .cards
+                width: 87%;
+                margin: auto;
+                .myCard
+                    text-align: center;
+                    padding: 20px;
+                    color: white;
+                    box-sizing: border-box;
+                    transition: 0.3s ease-in-out;
+                    cursor: pointer;
+                    i
+                        font-size: 35px;
+                .html
+                    background-color: #dd4b25;
+                    border: 1px solid #dd4b25;
+                    &:hover
+                        color: #dd4b25;
+                        background-color: #fff;
+                .css
+                    background-color: #254bdd;
+                    border: 1px solid #254bdd;
+                    &:hover
+                        color: #254bdd;
+                        background-color: #fff;
+                .js
+                    background-color: #f7d724;
+                    border: 1px solid #f7d724;
+                    &:hover
+                        color: #f7d724;
+                        background-color: #fff;
+                .jquery
+                    background-color: #0865a7;
+                    border: 1px solid #0865a7;
+                    &:hover
+                        color: #0865a7;
+                        background-color: #fff;
+                .sass
+                    background-color: #c76395;
+                    border: 1px solid #c76395;
+                    &:hover
+                        color: #c76395;
+                        background-color: #fff;
+
+
+// ----------------------------Gallery---------------------------------------------
+.gallery
+    position: relative;
+    .text
+        position: absolute;
+        right: -15px;
+        top: -73px;
+        font-size: 80px;
+        font-weight: 700;
+        // background-color: #0d6efd;
+        padding: 10px 120px 10px 50px;
+        color: white;
+        // background: linear-gradient(to top, #0d6efd 50%, #fff 0%);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 2px;
+        z-index: -10;
+        white-space: nowrap;
+    .img
+        box-shadow: 0 0 15px rgba(0, 0, 0,0.5 );
+        img
+            max-width: 100%;
+            max-height: 300px;
+            float: left;
+            right: 0;
+        &::after
+            content: "";
+            display: block;
+            clear: both;
+
+
+// -------------------------------------PROJECT------------------------------------------------
+.project
+    h2
+        font-size: 100px;
+        color: #0d6efd;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        position: relative;
+        white-space: nowrap;
+        span
+            position: absolute;
+            top: 50px;
+            right: 150px;
+            z-index: -10;
+            color: white;
+            white-space: nowrap;
+    .js-tilt
+        position: relative;
+        transform-style: preserve-3d;
+        img
+            max-width: 100%;
+        .overlay
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0,0.3 );
+            transition: 0.5s;
+        h3
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            left: 0;
+            right: 0;
+            text-shadow: 0 0 1px #333;
+            transform: translateZ(50px);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            display: none;
+            transition: 1s;
+        &:hover
+            z-index: 1000;
+            .overlay
+                left: 0;
+            h3
+                display: inline;
+
+// -------------------------------------ADDRESS------------------------------------------------
+.contact
+    position: relative
+    font-family: "Poppins", sans-serif
+    font-size: 14px
+    .address
+        width: 70%
+        color: white
+        margin: auto
+        padding: 20px
+        position: relative
+        box-shadow: 0 0 5px rgba(0, 0, 0,0.5 )
+        p.icon
+            white-space: nowrap
+            margin: 0
+        .map
+            i
+                font-size: 170px;
+                position: absolute
+                top: -18px
+                right: 10px
+    .row
+        textarea
+            height: 200px;
+
+
+
+
+// ----------------------------------------RESPONSIF----------------------------------------
+@media only screen and (max-width: 1199px)
+        .skill
+            .right
+                .header
+                    left: -80px;
+                    top: 50px;
+                .body   
+                    bottom: 170px;
+                    left: -100px;
+
+        .contact
+            .address
+                .map
+                    z-index: -1
+                    i
+                        position: absolute
+                        right: -100px
+
+
+@media only screen and (max-width: 990px)
+    .skatSkill
+        width: 130%;
+        top: -120px;
+        &:nth-child(1)
+            right: -250px;
+        &:nth-child(2)
+            right: -250px;
+            top: -250px;
+
+    .skill
+        .left
+            .top
+                position: absolute;
+                left: -90px;
+        .right
+            .header
+                left: -70px;
+                top: 50px;
+            .body   
+                bottom: 170px;
+                left: -100px;
+    
+    .gallery
+        .img
+            align-items: end !important;
+            padding: 5px !important;
+            .col
+                text-align: center;
+                padding: 5px !important;
+                img
+                    padding: 5px !important;
+                    max-height: 390px;
+                    &:nth-child(1), &:nth-child(2)
+                        padding-top: 0;
+                    &:nth-child(4)
+                        padding-bottom: 0;
+
+    .project
+        h2
+            span
+                left: 50px;
+
+    .contact
+        .address
+            .map
+                z-index: -1
+                i
+                    position: absolute
+                    right: -100px
+                        
+
+
+@media only screen and (max-width: 870px)
+    .skill
+        .left
+            .top
+                text-align: right !important;
+                padding-right: 20px;
+                h5
+                    span
+                        display: none;
+
+@media only screen and (max-width: 767px)
+    .skill
+        .right
+            .header
+                left: -150px;
+                top: -500px;
+                h2
+                    font-size: 50px;
+                    z-index: 10000000000;
+                    margin-left: 330px;
+                    span
+                        display: none;
+            .body
+                bottom: 110px;
+                left: 0;
+                .cards
+                    width: 60%;
+                    right: 50px;
+                    bottom: 0px;
+                    position: absolute;
+                    justify-content: center !important;
+                    .myCard
+                        padding: 20px;
+                        cursor: pointer;
+                        margin: 1px;
+    .project
+        h2
+            font-size: 80px;
+            span
+                top: 30px;
+
+
+    .contact
+        iframe
+            display: none
+@media only screen and (max-width: 575px)
+    .skill
+        .left
+            .top
+        .right
+            .header
+                left: -150px;
+                top: -500px;
+                h2
+                    font-size: 50px;
+                    z-index: 10000000000;
+                    margin-left: 330px;
+                    span
+                        display: none;
+            .body
+                bottom: 0px;
+                left: 0;
+                margin-bottom: 10px;
+                .cards
+                    width: 60%;
+                    right: 50px;
+                    bottom: 100px;
+                    position: absolute;
+                    justify-content: center !important;
+    .gallery
+        .text
+            left: -50px;
+            font-size: 70px;
+
+    .project
+        .row
+            .js-tilt
+                width: 80%;
+                margin: auto;
+
+
+@media only screen and (max-width: 480px)
+    .home
+        .left
+            background-position-y: -200px !important
+    .skill
+        .left
+            .top
+                display: none;
+            .bottom
+                padding: 0;
+                margin-bottom: -20px;
+        .right
+            .header
+                h2
+                    margin-left: 190px;
+                    span
+                        display: none;
+            .body
+                .cards
+                    width: 60%;
+                    left: 20px;
+    
+    .gallery
+        .text
+            font-size: 60px;
+            top: -60px;
+
+    .project
+        h2
+            font-size: 40px;
+        .row
+            .js-tilt
+                width: 70%;
+                margin-left: 50px;
+                margin-bottom: 10px;
