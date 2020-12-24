@@ -16,7 +16,7 @@ $(document).ready(function() {
             'position': 'right',
             'tooltips': ['My Name', 'My Skill', 'My Project', 'My Gallery', 'My Contact']
         },
-       	normalScrollElements: 1,
+       	normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
         touchSensitivity: 5,
         keyboardScrolling: true,
